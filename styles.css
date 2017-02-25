@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body, .container, .wrapper {
+  height: 100%;
+}
+
+.container {
+  height: 250px;
+  width: 300px;
+  background: #e9eaeb;
+  position: relative;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.pen-container {
+  position: relative;
+  transform: translateY(-50%);
+  top: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.big-pen {
+  left: 20px;
+  position: relative;
+}
+
+.small-pen {
+  background-image: url('small_pen.png');
+  display: inline-block;
+  position: absolute;
+  right: -600px;
+  top: 140px;
+}
+
+.line {
+  border-bottom: 1px solid #b29142;
+  position: absolute;
+  right: 300px;
+  width: 600px;
+  display: none;
+}
+
+.writing {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+}
+
+.parker-ingenuity {
+  background: url('sptsht_parkeringenuity.png') no-repeat;
+  background-position: 56px 40px;
+  top: 55px;
+}
+
+.fifth-technology {
+  background: url('sptsht_5thtechnology.png') no-repeat;
+  background-position: 70px 40px;
+  top: 175px;
+}
+
+.over-time {
+  background: url('sptsht_overtime.png') no-repeat;
+  background-position: 90px 28px;
+  left: 460px;
+  top: 135px;
+  transform: translateX(-50%);
+  height: 28px;
+}
+
+.text1 {
+  position: absolute;
+  transform: translateX(-50%);
+  top: 65px;
+  left: 450px;
+  visibility: hidden;
+}
+
+.logo {
+  top: 40px;
+}
+
+.button {
+  top: 190px;
+}
+
+.final {
+  visibility: hidden;
+  left: 450px;
+  position: absolute;
+  transform: translateX(-50%);
+}

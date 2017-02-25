@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="ad.size" content="width=300,height=250">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="writing parker-ingenuity"></div>
+      <div class="pen-container">
+        <img class="big-pen" src="big_pen.jpg" alt="pen"/>
+        <hr class="line">
+      </div>
+      <div class="writing fifth-technology"></div>
+      <img class="second-fade text1" src="text1.png"/>
+      <div class="second-fade writing over-time"></div>
+      <img class="small-pen" src="small_pen.png"/>
+      <img class="final logo" src="logo.png" src="Parker Ingenuity logo"/>
+      <img class="final button" src="button.png" src="Learn More button"/>
+    </div>
+  </div>
+
+  <!-- clickTag script -->
+  <meta name="ad.size" content="width=300,height=250">
+  <script type="text/javascript">
+    var clickTag = "https://www3.troweprice.com/usis/personal-investing/products-and-services/activeplus-portfolios.html?van=activeplusportfolios";
+    var clickContainer = document.querySelector(".container");
+    clickContainer.addEventListener("click", openWindow, true);
+
+    function openWindow() {
+      window.open(window.clickTag);
+      console.log('button clicked');
+    }
+  </script>
+  <!-- end clickTag script -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script> <!-- greensock library -->
+  <script src="main.js"></script>
+</body>
+
+</html>
