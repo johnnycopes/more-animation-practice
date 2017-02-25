@@ -17,11 +17,7 @@ function bannerInit() {
 
   var tl = new TimelineMax();
 
-  // for (var i = 1; i <= 7; i++) {
-  //   tl.to(pen, 4, {
-  //     ease: Power1.easeOut
-  //   });
-  // }
+  /* NOTE: the hardest part of these animations is cycling through the spritesheet to make the writing appear. The trick is to use the 'SteppedEase' ease function whose config() method takes the number of items on the spritesheet. You need to figure out how much space each item on the sheet needs to be visible and can be iterated to clearly display every other item on the sheet (for example: the parker-ingenuity sheet were spaced so that 40px was the perfect amount of space to display each item. Multiply the view amount times the number of (iterations - 1) -- don't forget that you need to leave an offset at the beginning to show nothing -- and that's the final negative pixel count you need to properly display the final item on the spritesheet, and the animation will cleanly show every iteration from the beginning until then. This tactic was inspired by this CodePen: https://codepen.io/drygiel/pen/KbhmA */
 
   tl.to(bigPen, 1, {
     delay: 0.25,
